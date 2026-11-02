@@ -8,8 +8,6 @@
 - 输出先写临时文件，Rust 完整解码验证通过后才重命名为 `.mp3` / `.flac`；provider 不支持安全重命名时拒绝发布。
 - FLAC 自动转 MP3 320 kbps CBR；MP3 原样恢复不重编码。不删除源 `.ncm`、不做开机启动/常驻/被杀自动拉起。
 
-**实测设备**：Xiaomi Redmi K Pad（25079RPDCC），Android 16 / API 36，arm64-v8a。详见 [真机测试记录](docs/test-record.md) 与 [结论与限制](docs/findings.md)。
-
 ## 交付物
 
 | 文件 | 说明 |
